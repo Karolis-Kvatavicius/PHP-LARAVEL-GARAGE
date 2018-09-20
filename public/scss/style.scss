@@ -1,0 +1,88 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    main {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        min-height: 64.7vh;
+    }
+    nav {
+        ul {
+            list-style: none;
+            li {
+            display: inline-block;
+            padding: 25px;
+            font-size: 18px;
+            text-shadow: 0.8px 0px black;
+            }
+        }
+    }
+    .flex {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .mechanic {
+            border-radius: 5px;
+            border: 1.5px solid darkviolet;
+            padding: 20px;
+            min-width: 250px;
+        }
+    }
+    h3 {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    input, select, textarea {
+        border-radius: 5px;
+        border: none;
+        padding: 20px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: darkviolet;
+        padding: 10px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .add:hover {
+        background-color: darkviolet;
+        color: white;
+    }
+    footer {
+        background-color: black;
+        p {
+            color: white;
+            margin: 0;
+            padding: 25px;
+            text-align: center;
+            
+        }
+    }
+
+    .filter {
+        a {
+            display: inline-block;
+            margin: 20px;
+        }
+    }
+
+    .new-entry {
+        padding-bottom: 30px;
+    }
+
+    .flex2 {
+        display: flex;
+    }
+
+    .field {
+        margin-right: 40px;
+    }
+}
