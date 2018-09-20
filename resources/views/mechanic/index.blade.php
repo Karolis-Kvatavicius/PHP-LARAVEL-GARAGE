@@ -26,6 +26,7 @@
     <p>Name: {{$mech->name}}</p>
     <p>Surname: {{$mech->surname}}</p>
     <a href="{{route('mechanic.delete', $mech -> id)}}">Ištrinti</a>
+    <a href="{{route('mechanic.showTrucks', $mech -> id)}}">Peržiūrėti mechaniko užimtumą</a>
 </div>
 <br><br>
 @endforeach

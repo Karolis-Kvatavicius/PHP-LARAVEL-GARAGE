@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Mechanic;
+use App\Truck;
 use App\Http\Requests\MechanicRequest;
 
 class MechanicController extends Controller
@@ -53,6 +54,14 @@ class MechanicController extends Controller
          public function filterDesc() {
 
             return view('mechanic.index', ['mechanics' => Mechanic::orderBy('id', 'desc')->get()]);
+
+         }
+
+         public function showTrucks($id) {
+            $trucks = Truck::where('mechanic_id', $id)->get();
+            $mechanic = Mechanic::where('id', $id)->get();
+            // dd($trucks, $mechanic);
+            return view('mechanic.mechanic_trucks', ['trucks' => $trucks, 'mechanic' => $mechanic]);
 
          }
         

@@ -25,7 +25,11 @@ class TruckRequest extends FormRequest
     {
         return [
             //visi fieldai required
-            'truck_plate' => 'required|regex:/^\w+\-\d+$/',    
+            'truck_make_year' => 'required|numeric',
+            'truck_maker' => 'required|alpha',
+            'truck_plate' => 'required|regex:/^\w+\-\d+$/',
+            'truck_mech_notices' => 'required',
+            'mechanic' => 'required'    
         ];
     }
 }

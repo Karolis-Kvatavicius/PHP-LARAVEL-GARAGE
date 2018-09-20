@@ -24,6 +24,7 @@ Route::group(['prefix' => 'mechanics'], function(){
     Route::get('/delete/{id}', 'MechanicController@delete')->name('mechanic.delete');
     Route::get('/filterA', 'MechanicController@filterAsc')->name('mechanic.filterAsc');
     Route::get('/filterD', 'MechanicController@filterDesc')->name('mechanic.filterDesc');
+    Route::get('/trucks/{id}', 'MechanicController@showTrucks')->name('mechanic.showTrucks');
 });
 
 Route::group(['prefix' => 'trucks'], function(){

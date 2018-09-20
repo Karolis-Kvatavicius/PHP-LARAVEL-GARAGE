@@ -24,7 +24,7 @@ class MechanicRequest extends FormRequest
     public function rules()
     {
         return [
-            'mechanic_name' => 'required|alpha|',
+            'mechanic_name' => 'required|alpha',
             'mechanic_surname' => 'required|alpha',
         ];
     }
